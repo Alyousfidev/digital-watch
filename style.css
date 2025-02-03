@@ -1,0 +1,68 @@
+/* Background styling */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Watch container */
+.watch-container{
+  width: 400px;
+  height: 150px;
+  background-color: #24243e;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.6), 
+  inset 0px 4px 8px rgba(255, 255, 255, 0.05);
+  outline-color: aliceblue;
+  border: 1px solid gold;
+}
+
+.watch{
+  width: 350px;
+  height: 100px;
+  background: #222;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 70px;
+  color: aqua;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 
+  0 0 25px rgba(0, 255, 255, 0.8);
+  animation: glow 1s ease-in-out infinite alternate;
+  border: 1px solid gold;
+  align-self: center;
+  justify-content: center;
+
+}
+
+@keyframes glow {
+  0%{
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 
+    0 0 25px rgba(0, 255, 255, 0.8);
+  }
+  50%{
+    text-shadow: 0 0 25px rgba(0, 255, 255, 0.6), 
+    0 0 35px rgba(0, 255, 255, 0.8);
+  }
+  100%{
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.6), 
+    0 0 25px rgba(0, 255, 255, 0.8);
+  }
+  
+}
+.logo{
+  color: gold;
+  padding-top: 10px;
+}
